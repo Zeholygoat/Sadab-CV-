@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070914">
+  <meta name="description" content="Sadab Sazzad Alif — software engineer exploring the intersection of software, cloud systems and geospatial technology.">
+  <title>Sadab Alif — Orbitfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="progress-track"><span id="scrollProgress"></span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Orbitfolio home"><span class="brand-mark">S<span>✳</span></span><span>ORBITFOLIO<span class="brand-sub"> / SADAB ALIF</span></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#mission">Mission</a><a href="#projects">Expeditions</a><a href="#experience">Trajectory</a><a href="#skills">Systems</a>
+    </nav>
+    <div class="top-actions"><span class="status"><i></i> OPEN TO OPPORTUNITIES</span><button class="icon-btn" id="commandOpen" aria-label="Open command menu">⌘ K</button><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span> SOFTWARE ENGINEER · CARDIFF, WALES</div>
+        <p class="hero-kicker">BUILDING TOMORROW, ONE SYSTEM AT A TIME.</p>
+        <h1>Curiosity is my<br> <span class="gradient-text">launch sequence.</span></h1>
+        <p class="hero-desc">I’m <strong>Sadab Sazzad Alif</strong> — a software engineer with a Computer Engineering background, currently pursuing an MSc in Software Engineering at Cardiff University. I build thoughtful applications, scalable systems and data-driven tools.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my universe <span>↗</span></a><a class="button button-ghost" href="assets/Sadab_Sazzad_Alif_CV.pdf" download>Download CV <span>↓</span></a></div>
+        <div class="hero-metrics">
+          <div><strong>03<span>+</span></strong><small>CAREER CHAPTERS</small></div>
+          <div><strong>06<span>+</span></strong><small>PROJECT WORLDS</small></div>
+          <div><strong>∞</strong><small>THINGS TO LEARN</small></div>
+        </div>
+      </div>
+      <div class="cosmos-wrap reveal">
+        <div class="orbit-label label-one"><span class="label-dot cyan"></span> SYSTEMS THINKING <small>ACTIVE</small></div>
+        <div class="orbit-label label-two"><span class="label-dot purple"></span> CREATIVE ENGINEERING <small>ONLINE</small></div>
+        <div class="cosmos" id="cosmos" aria-label="Animated orbital illustration">
+          <div class="orbit orbit-a"><span class="satellite satellite-a"></span></div>
+          <div class="orbit orbit-b"><span class="satellite satellite-b"></span></div>
+          <div class="orbit orbit-c"><span class="satellite satellite-c"></span></div>
+          <div class="planet"><div class="planet-shine"></div><div class="planet-ring"></div></div>
+          <div class="cosmos-core">S<span>✳</span></div>
+          <span class="star star-a">✦</span><span class="star star-b">✧</span><span class="star star-c">✦</span>
+        </div>
+        <div class="coordinates"><span>51°29′N</span><span>03°10′W</span><span>EARTH / UK</span></div>
+        <div class="orbit-caption">CURRENTLY EXPLORING <span>▰ SOFTWARE · DATA · SPACE</span></div>
+      </div>
+      <a href="#mission" class="scroll-cue"><span class="scroll-wheel"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section mission-section" id="mission">
+      <div class="section-heading reveal"><div><span class="section-index">01 / MISSION BRIEF</span><h2>Engineer with a <span class="gradient-text">wider orbit.</span></h2></div><p>Good technology should feel invisible: reliable underneath, intuitive on the surface, and useful in the real world.</p></div>
+      <div class="mission-grid">
+        <article class="mission-card glass reveal"><span class="card-symbol">⌘</span><span class="mini-label">01 — BUILD</span><h3>Full-stack systems</h3><p>From interfaces and APIs to data stores and deployment pipelines, I enjoy connecting the pieces into dependable products.</p><div class="card-foot"><span>FRONTEND ↔ BACKEND</span><span>↗</span></div></article>
+        <article class="mission-card glass reveal"><span class="card-symbol">⌁</span><span class="mini-label">02 — AUTOMATE</span><h3>Cloud & DevOps</h3><p>Repeatable releases, infrastructure automation and observability help software move from a local build to a resilient service.</p><div class="card-foot"><span>CI/CD · CLOUD · IaC</span><span>↗</span></div></article>
+        <article class="mission-card glass reveal"><span class="card-symbol">◎</span><span class="mini-label">03 — DISCOVER</span><h3>Data & geography</h3><p>I’m interested in turning complex datasets into clear visual stories and practical digital tools for evidence-led decisions.</p><div class="card-foot"><span>DATA · GIS · VISUALISATION</span><span>↗</span></div></article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal"><div><span class="section-index">02 / EXPEDITION LOG</span><h2>Selected <span class="gradient-text">project worlds.</span></h2></div><p>Each build is a chance to test an idea, solve a problem and learn something new.</p></div>
+      <div class="project-toolbar reveal"><span>PROJECT DATABASE <b>06 RECORDS</b></span><div class="filter-list" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all">ALL</button><button class="filter" data-filter="software">SOFTWARE</button><button class="filter" data-filter="cloud">CLOUD</button><button class="filter" data-filter="data">DATA</button></div></div>
+      <div class="project-grid">
+        <article class="project-card project-featured reveal" data-category="software data"><div class="project-art art-map"><div class="map-grid"></div><div class="map-orbit"></div><span class="map-pin pin-one">●</span><span class="map-pin pin-two">●</span><span class="map-pin pin-three">●</span><span class="art-tag">GEO / 01</span><div class="map-readout">LAT 51.4816<br>LON -3.1791<br><b>DATA LINK: ACTIVE</b></div></div><div class="project-info"><div class="project-type">GEOSPATIAL · DATA VISUALISATION</div><h3>Data-driven intelligence</h3><p>Exploring geospatial layers, interactive maps and data-led decision support — connecting location intelligence with accessible interfaces.</p><div class="tech-row"><span>Python</span><span>Folium</span><span>Streamlit</span><span>GeoJSON</span></div></div></article>
+        <article class="project-card reveal" data-category="software"><div class="project-art art-network"><div class="network-lines"></div><div class="network-node n1">API</div><div class="network-node n2">DB</div><div class="network-node n3">UI</div><div class="network-node n4">AUTH</div><span class="art-tag">STACK / 02</span></div><div class="project-info"><div class="project-type">FULL-STACK DEVELOPMENT</div><h3>SaaS platform architecture</h3><p>A web platform concept combining a React interface, Node.js services, MongoDB persistence and JWT-based authentication.</p><div class="tech-row"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Docker</span></div></div></article>
+        <article class="project-card reveal" data-category="cloud"><div class="project-art art-pipeline"><div class="pipeline"><span>COMMIT</span><i>→</i><span>BUILD</span><i>→</i><span>TEST</span><i>→</i><span>SHIP</span></div><div class="pipeline-wave"></div><span class="art-tag">OPS / 03</span></div><div class="project-info"><div class="project-type">CLOUD · AUTOMATION</div><h3>Continuous delivery pipeline</h3><p>CI/CD workflow design using GitHub Actions and Jenkins, with containerisation and infrastructure-as-code practices.</p><div class="tech-row"><span>GitHub Actions</span><span>Jenkins</span><span>Terraform</span></div></div></article>
+        <article class="project-card reveal" data-category="software"><div class="project-art art-library"><div class="book-stack"><span></span><span></span><span></span><span></span></div><div class="library-circle">JAVA<br><small>SPRING</small></div><span class="art-tag">OBJECTS / 04</span></div><div class="project-info"><div class="project-type">BACKEND · OOP</div><h3>Library management system</h3><p>A Java and Spring Boot application for managing books, users and transactions through CRUD operations and REST APIs.</p><div class="tech-row"><span>Java</span><span>Spring Boot</span><span>MVC</span></div></div></article>
+        <article class="project-card reveal" data-category="data"><div class="project-art art-data"><div class="chart-bars"><i style="--h:35%"></i><i style="--h:58%"></i><i style="--h:46%"></i><i style="--h:82%"></i><i style="--h:68%"></i><i style="--h:96%"></i><i style="--h:73%"></i></div><div class="chart-line"></div><span class="art-tag">SIGNAL / 05</span></div><div class="project-info"><div class="project-type">DATA ANALYSIS · AUTOMATION</div><h3>Python analysis toolkit</h3><p>Automating repetitive data tasks and transforming datasets into visual insights with Python’s data-analysis ecosystem.</p><div class="tech-row"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></div></div></article>
+        <article class="project-card reveal" data-category="software"><div class="project-art art-code"><div class="code-lines"><span><b>01</b> <i>struct</i> Node {</span><span><b>02</b> &nbsp; int value;</span><span><b>03</b> &nbsp; Node *next;</span><span><b>04</b> };</span><span><b>05</b> <em>// build from basics</em></span></div><span class="art-tag">LOW LEVEL / 06</span></div><div class="project-info"><div class="project-type">SYSTEMS · FUNDAMENTALS</div><h3>C programming utilities</h3><p>Low-level exercises in file handling, memory management and implementing core data structures from scratch.</p><div class="tech-row"><span>C</span><span>Memory</span><span>Data structures</span></div></div></article>
+      </div>
+      <p class="project-note"><span>ⓘ</span> Project descriptions are based on the supplied CV. Add repository links to each card when you’re ready to publish your code.</p>
+    </section>
+
+    <section class="section trajectory-section" id="experience">
+      <div class="section-heading reveal"><div><span class="section-index">03 / FLIGHT PATH</span><h2>A career in <span class="gradient-text">motion.</span></h2></div><p>Learning, building and working across software, systems and data.</p></div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <article class="timeline-item reveal"><div class="timeline-date">2026 — PRESENT <span class="timeline-dot current"></span></div><div class="timeline-card glass"><div class="timeline-top"><div><span class="mini-label">CURRENT ORBIT</span><h3>Software Engineer</h3><p class="company">Welsh Government <span>· Data & Geography</span></p></div><span class="timeline-symbol">⌖</span></div><ul><li>Contributing to the development and maintenance of software applications.</li><li>Supporting digital solutions and data-driven tools for public services.</li><li>Working across requirements, implementation, testing and deployment.</li><li>Exploring geospatial technologies and data visualisation.</li></ul></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">2023 <span class="timeline-dot"></span></div><div class="timeline-card glass"><div class="timeline-top"><div><span class="mini-label">ENGINEERING</span><h3>Software Engineer</h3><p class="company">Sugar Book</p></div><span class="timeline-symbol">⌘</span></div><ul><li>Developed software solutions aligned with business objectives.</li><li>Contributed to architecture, cross-functional delivery and mentoring.</li><li>Worked with microservices architecture to support scalability.</li></ul></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">2020 — 2022 <span class="timeline-dot"></span></div><div class="timeline-card glass"><div class="timeline-top"><div><span class="mini-label">FOUNDATIONS</span><h3>Software Engineer</h3><p class="company">Zap Lab Studios</p></div><span class="timeline-symbol">⌁</span></div><ul><li>Optimised database queries and developed robust APIs.</li><li>Designed CI/CD pipelines and automated infrastructure provisioning.</li><li>Supported cloud adoption, application security and technical documentation.</li></ul></div></article>
+      </div>
+    </section>
+
+    <section class="section systems-section" id="skills">
+      <div class="section-heading reveal"><div><span class="section-index">04 / SHIP SYSTEMS</span><h2>My engineering <span class="gradient-text">toolkit.</span></h2></div><p>Tools are instruments. The goal is to choose the right ones for the problem.</p></div>
+      <div class="skills-layout">
+        <div class="skills-list">
+          <article class="skill-group glass reveal"><div class="skill-head"><span class="skill-icon">⌘</span><h3>Languages</h3><span class="skill-count">06</span></div><div class="skill-chips"><span>Python</span><span>JavaScript</span><span>Java</span><span>SQL</span><span>TypeScript</span><span>C++</span></div></article>
+          <article class="skill-group glass reveal"><div class="skill-head"><span class="skill-icon">◈</span><h3>Application development</h3><span class="skill-count">12</span></div><div class="skill-chips"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>Next.js</span><span>Spring Boot</span><span>Django</span><span>Flask</span><span>FastAPI</span><span>HTML5</span><span>CSS3</span><span>Tailwind</span><span>Redux</span></div></article>
+          <article class="skill-group glass reveal"><div class="skill-head"><span class="skill-icon">⌁</span><h3>Cloud & delivery</h3><span class="skill-count">07</span></div><div class="skill-chips"><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Jenkins</span><span>Terraform</span><span>CloudFormation</span></div></article>
+          <article class="skill-group glass reveal"><div class="skill-head"><span class="skill-icon">◎</span><h3>Data, quality & security</h3><span class="skill-count">12</span></div><div class="skill-chips"><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Redis</span><span>PyTest</span><span>JUnit</span><span>Postman</span><span>Selenium</span><span>Grafana</span><span>Prometheus</span><span>JWT</span><span>OAuth 2.0</span></div></article>
+        </div>
+        <aside class="skill-side glass reveal"><div class="radar"><div class="radar-ring r1"></div><div class="radar-ring r2"></div><div class="radar-ring r3"></div><div class="radar-cross"></div><div class="radar-sweep"></div><span class="radar-center">SA</span><span class="radar-label rl1">BUILD</span><span class="radar-label rl2">SHIP</span><span class="radar-label rl3">LEARN</span></div><div class="radar-caption"><span class="mini-label">ENGINEERING DIRECTIVE</span><h3>Always in orbit.</h3><p>Continuous learning, pragmatic problem-solving, collaboration and clean architecture.</p><div class="directive-row"><span>ADAPTABILITY</span><span>●●●●●</span></div><div class="directive-row"><span>TEAMWORK</span><span>●●●●●</span></div><div class="directive-row"><span>PROBLEM SOLVING</span><span>●●●●●</span></div></div></aside>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="section-heading reveal"><div><span class="section-index">05 / ACADEMIC TRANSMISSIONS</span><h2>Knowledge is the <span class="gradient-text">fuel.</span></h2></div><p>Building a foundation that connects engineering principles with real-world applications.</p></div>
+      <div class="education-grid">
+        <article class="education-card glass reveal"><div class="edu-year">2024 — 2027</div><div class="edu-icon">◉</div><div class="edu-content"><span class="mini-label">POSTGRADUATE</span><h3>MSc Software Engineering</h3><p>Cardiff University</p><div class="edu-tags"><span>Software Architecture</span><span>AI</span><span>Data Science</span><span>Cybersecurity</span><span>DevOps</span></div></div></article>
+        <article class="education-card glass reveal"><div class="edu-year">2019 — 2023</div><div class="edu-icon">◈</div><div class="edu-content"><span class="mini-label">UNDERGRADUATE</span><h3>Bachelor’s in Computer Engineering</h3><p>Asia Pacific University</p><div class="grade">CGPA <strong>3.3 / 4.0</strong></div><div class="edu-tags"><span>Algorithms</span><span>Machine Learning</span><span>Cloud</span><span>Networks</span></div></div></article>
+      </div>
+      <div class="achievement glass reveal"><div class="achievement-icon">✦</div><div><span class="mini-label">MILESTONE UNLOCKED · 2024</span><h3>Best Innovation in Hackathon</h3><p>Cardiff University — recognised for developing an AI-driven tool to optimise cloud resource usage.</p></div><span class="achievement-stamp">ACHIEVEMENT<br><b>UNLOCKED</b></span></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-orbit orbit-left"></div><div class="contact-orbit orbit-right"></div>
+      <div class="contact-inner reveal"><span class="section-index">06 / OPEN CHANNEL</span><div class="contact-beacon">✳</div><h2>Have a mission<br>worth <span class="gradient-text">building?</span></h2><p>Let’s connect about software engineering, application development, data, or the next interesting technical challenge.</p><div class="hero-actions contact-actions"><a class="button button-primary" href="mailto:sadabwinchester@gmail.com">Start a conversation <span>↗</span></a><a class="button button-ghost" href="https://www.linkedin.com/in/Sadab-alif/" target="_blank" rel="noreferrer">Connect on LinkedIn <span>↗</span></a></div><div class="contact-email">SADABWINCHESTER@GMAIL.COM <button id="copyEmail" aria-label="Copy email address">COPY ⧉</button></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">S<span>✳</span></span><span>ORBITFOLIO<span class="brand-sub"> / SADAB ALIF</span></span></a><span>DESIGNED TO EXPLORE · BUILT TO DEPLOY</span><a href="#home">BACK TO ORBIT ↑</a><small>© <span id="year"></span> Sadab Sazzad Alif</small></footer>
+
+  <div class="command-overlay" id="commandOverlay" aria-hidden="true"><div class="command-box"><div class="command-head"><span>⌘ / NAVIGATION CONSOLE</span><button id="commandClose" aria-label="Close command menu">ESC ✕</button></div><input id="commandInput" type="text" placeholder="Where do you want to go?" autocomplete="off"><div class="command-results" id="commandResults"><button data-target="#mission"><span>01</span> Mission briefing <kbd>M</kbd></button><button data-target="#projects"><span>02</span> Project expeditions <kbd>P</kbd></button><button data-target="#experience"><span>03</span> Career trajectory <kbd>T</kbd></button><button data-target="#skills"><span>04</span> Engineering toolkit <kbd>S</kbd></button><button data-target="#education"><span>05</span> Education <kbd>E</kbd></button><button data-target="#contact"><span>06</span> Open channel <kbd>C</kbd></button></div><div class="command-foot">↑ ↓ TO BROWSE <span>ENTER TO JUMP</span> ESC TO CLOSE</div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
